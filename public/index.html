@@ -1,262 +1,137 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Design Service - Créations Graphiques</title>
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        overflow-x: hidden;
-    }
-    header {
-        background-color:  #8b008b;
-        color: white;
-        padding:10px;
-        text-align: center;
-        font-size:22px;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-    }
-    nav {
-        display: flex;
-        justify-content: center;
-        background-color: #333;
-    }
-    nav a {
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 0.9em;
-    }
-    nav a:hover {
-        background-color: #8b008b;
-    }
-    .container {
-        padding: 5px;
-        position: relative;
-        z-index: 1;
-    }
-    .services, .portfolio, .about, .contact {
-        margin-bottom: 20px;
-    }
-    .titre h2, .about h2, .contact h2 {
-        text-decoration:underline;
-        color: #48d1cc;
-        text-align: center;
-        margin-bottom:15px;
-    }
-    .about p, .contact p {
-        color: white;
-        text-align: center;
-        margin-bottom:15px;
-    }
-    .services{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .service-item, .portfolio-item {
-        text-align: center;
-        background-color: #A3C1E0;
-        padding:15px;
-        margin:10px;
-        border-radius:8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        flex: 1 1 30%;
-        max-width: 100%;
-        box-sizing: border-box;
-        border:1px solid #48d1cc;
-    }
-    .service-item h3, .portfolio-item h3 {
-        color: #8b008b;
-    }
-    .portfolio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .portfolio-item {
-        width: 100%;
-        max-width: 40%;
-        text-align: center;
-    }
-    .portfolio-item img {
-        max-width: 100%;
-        border-radius: 8px;
-    }
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 5px 0;
-        margin-top:5px;
-    }
-    footer a {
-        color: #8b008b;
-        text-decoration: none;
-    }
-    footer a:hover {
-        text-decoration: underline;
-    }
-    .background {
-        background-image: url('file:///storage/emulated/0/Ir Ricardo/Ricardo.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-        width: 100%;
-        filter: blur(3px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-    .carousel {
-        display: flex;
-        white-space: nowrap;
-        overflow-x: auto;
-        animation: scroll 10s linear infinite;
-    }
-    .carousel img {
-        width: 400px;
-        height: 100px;
-        margin-right: 10px;
-        border-radius: 6px;
-        border:2px solid #A3C1E0;
-    }
-    @keyframes scroll {
-        from {
-            transform: translateX(auto);
-        }
-        to {
-            transform: translateX(-auto);
-        }
-    }
-    @media (max-width: 768px) {
-        header h1 {
-            font-size: 2em;
-        }
-        nav a {
-            font-size: 0.8em;
-        }
-        .service-item, .portfolio-item {
-            flex: 1 1 100%;
-        }
-        .carousel img {
-            width: 150px;
-        }
-        
-    }
+<html lang="en">
+	 <head>
+			<title>ℂℍ𝔼𝕀𝕂 𝔸𝕄𝕀ℝ 𝔸𝕌𝕋𝕆𝔹𝕆𝕋 𝕊𝕀𝕋𝔼</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="styles.css">
+	 </head>
+	 <body>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				 <a class="navbar-brand" href="#">ℂℍ𝔼𝕀𝕂 𝔸𝕄𝕀ℝ [🔴] 𝔸𝕌𝕋𝕆𝔹𝕆𝕋</a>
+				 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				 <span class="navbar-toggler-icon"></span>
+				 </button>
+				 <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;">
+						<ul class="navbar-nav">
+							 <li class="nav-item active">
+									<a class="nav-link" href="/">Home <span class="sr-only">(current)</span>
+									</a>
+							 </li>
+							 <li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Features </a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										 <a class="dropdown-item" href="#">Cookies Extractor</a>
+										 <div class="dropdown-divider"></div>
+										 <a class="dropdown-item" href="/step_by_step_guide">Step-by-Step Guide</a>
+							    </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="online_user"> 𝗔𝗖𝗧𝗜𝗩𝗘 [✅]</a>
+               </li>
+              <li class="nav-item">
+                  
+              
+							
+              
+              
+							<li class="nav-item">
+              <a class="nav-link" href="/time">𝘁𝗶𝗺𝗲</a
+							</li>
+							<li class="nav-item">
+              <a class="nav-link" href="/analog">analogClock</a>
+									</li>
+							<li class="nav-item">
+                  <a class="nav-link" href="/random">randomQuotes</a>
+            </ul>
+         </div>
+			</nav>
+			<div class="container">
+				 <h1 class="col text-center" style="font-size: 20px; padding: 10px;"> 𝗙𝗕-𝗦𝗧𝗔𝗧𝗘 ⬣</h1>
+				 <form id="json-form" onsubmit="submitForm(event)">
+						<div class="row">
+							 <div class="col-md-12">
+									<textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder=""></textarea>
+							 </div>
+						</div>
+				 </form>
+				 <p style=" margin-top: 10px; color: #FFFFFF">𝘐𝘤𝘪 𝘷𝘦𝘪𝘭𝘭𝘦𝘻 𝘱𝘭𝘢𝘤𝘦́ 𝘭𝘦 𝘤𝘰𝘰𝘬𝘪𝘦 𝘥𝘶 𝘤𝘰𝘮𝘱𝘵𝘦 𝘍𝘢𝘤𝘦𝘣𝘰𝘰𝘬 𝘢 𝘶𝘵𝘪𝘭𝘪𝘴𝘦́ 𝘱𝘰𝘶𝘳 l'auto-entrepreneur✰</p>
+			</div>
+			<div class="container">
+			    <h1 class="col text-center" style="font-size: 20px; padding: 10px;">𝙇𝙀𝙎 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉 𝘿𝙐 𝘾𝙍𝙀́𝘼𝙏𝙀𝙐𝙍 𝘿𝙐 𝙎𝙄𝙏𝙀 𝙄𝙎𝙀𝙆𝘼𝙄 𝘼𝙐𝙏𝙊-𝘽𝙊𝙏[💬]</h1>        
+<a href="https://www.facebook.com/cheikamirguiatin" target="_blank">
+   <button type="button">ℂℍ𝔼𝕀𝕂 𝔸𝕄𝕀ℝ [🔵]</button>
+</a>
 
-    @media (max-width: 480px) {
-        header h1 {
-            font-size: 1.8em;
-               }
-        nav a {
-            font-size: 0.7em;
-        }
-    }
-     @media (max-width: 1300px) {
-        header h1 {
-            font-size: 1.8em;
-               }
-        nav a {
-            font-size: 0.7em;
-        }
-         .service-item{
-            margin:8px;
-            pading:30px;
-            }
-    }
-</style>
-</head>
+				  <div class="container" id="listOfCommands">
+						<h1 style="font-size: 16px; padding: 10px;">𝘾𝙃𝙊𝙄𝙎𝙄𝙎𝙎𝙀𝙕 𝙇𝙀𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙀𝙎 𝙋𝙊𝙐𝙍 𝙑𝙊𝙏𝙍𝙀 𝘼𝙐𝙏𝙊-𝘽𝙊𝙏[🗃]</h1>
+						<button class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
+				 </div>
+				 <div class="container" id="listOfCommandsEvent">
+						<h1 style="font-size: 16px; padding: 10px;">ℂℍ𝕆𝕀𝕊𝕀𝕊𝕊𝔼ℤ 𝕍𝕆𝕊 ℂ𝕄𝔻 [📝]</h1>
+						<button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
+				 </div>
+				 <div class="container" id="prefixOfCommands">
+						<h1 style="font-size: 16px; padding: 10px;">𝕀ℕ𝕊𝔼ℝ𝔼ℤ 𝕌ℕ ℙℝ𝔼𝔽𝕀𝕏[🔖] ⬇</h1>
+						<input type="text" id="inputOfPrefix">
+				 </div>
+				 <div class="container" id="adminOfCommands">
+						<h1 style="font-size: 16px; padding: 10px;">𝕀ℕ𝕊ℂℝ𝕀𝕍𝔼ℤ 𝕍𝕆𝕋ℝ𝔼 𝕌𝕀𝔻[🌟]</h1>
+						<input type="text" id="inputOfAdmin">
+				 </div>
+				 <label style="font-size: 14px; display: flex; align-items: center; padding: 22px;">
+				 <input type="checkbox" id="agreeCheckbox" style="color: #FFF; margin-right: 10px;"> Checking this box certifies that I have read, understood, and agreed to the Terms and Conditions. </label>
+				 <div class="col text-center">
+						<button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%"> ‹𝕍𝔸𝕃𝕀𝔻𝔼ℤ› </button>
+				 </div>
+			</div>
+			<div id="result" class="container text-center" style="display: none;"></div>
+			<div class="footer">
+				 <p>Time: <span id="time"></span>
+				 </p>
+				 <p>Ping: <span id="ping"></span>
+				 </p>
+			</div>
+			<script src="script.js"></script>
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+	 </body>
+</html>
 <body>
-    <header>
-        <h1>Amir Design Service</h1>
-       <p>Créations Graphiques sur Mesure</p>
-    </header>
-     <div class="background"></div>
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">À Propos</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="carousel">
-       <img src="Ricardo1.jpg" alt="Image 1">
-       <img src="Ricardo2.jpg" alt="Image 2">
-       <img src="Ricardo3.jpg" alt="Image 3">
-       <img src="Ricardo4.jpg" alt="Image 4">
-       <img src="Ricardo5.jpg" alt="Image 5">
-       <img src="Ricardo6.jpg" alt="Image 6">
-    </div>
-          <div class="container">
-              <div class="titre">
-                  <h2>Nos Services</h2>
-              </div>
-        <section id="services" class="services">
-            <div class="service-item">
-             <h3>Affiches Publicitaires</h3>
-                <p>Création d'affiches percutantes pour vos campagnes publicitaires.</p>
-            </div>
-            <div class="service-item">
-                <h3>Sites Web</h3>
-        <p>Conception de sites web modernes et responsives.</p>
-            </div>
-            <div class="service-item">
-                <h3>Logos</h3>
-                <p>Design de logos uniques et mémorables pour votre marque.</p>
-            </div>
-            <div class="service-item">
-                <h3>Étiquettes</h3>
-                <p>Création d'étiquettes attractives pour vos produits.</p>
-            </div>
-            <div class="service-item">
-                <h3>Calendriers</h3>
-                <p>Design de calendriers personnalisés pour votre entreprise.</p>
-            </div>
-        </section>
-        <div class="titre">
-                  <h2>Porfolio</h2>
-              </div>
-        <section id="portfolio" class="portfolio">
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Projet 1">
-                <h3>Projet 1</h3>
-              <p>Description du projet 1.</p>
-            </div>
-        <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Projet 2">
-                <h3>Projet 2</h3>
-              <p>Description du projet 2.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Projet 3">
-                <h3>Projet 3</h3>
-              <p>Description du projet 3.</p>
-            </div>
-        </section>
-        <section id="about" class="about">
-            <h2>À Propos</h2>
-            <p>Amir Design Service est une entreprise spécialisée dans la création graphique. Nous offrons des solutions sur mesure pour répondre à vos besoins en matière de design, que ce soit pour des affiches publicitaires, des sites web, des logos, des étiquettes, des calendriers, et bien plus encore.</p>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Pour toute demande de devis ou information, n'hésitez pas à nous contacter :</p>
-            <p>Email : <a href="mailto:contact@amirdesign.com">contact@amirdesign.com</a></p>
-            <p>Téléphone : +226 06308576</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2023 Amir Design Service. Tous droits réservés.</p>
-        <p><a href="#top">Retour en haut</a></p>
-    </footer>
+	</style>
+	<div style="font-size: 25px">
+	<script type="text/javascript">
+	farbbibliothek = new Array();
+	farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100");
+	farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00");
+	farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00");
+	farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040");
+	farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000");
+	farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF");
+	farbbibliothek[6] = new Array("#0000FF","#FFFF00");
+	farben = farbbibliothek[4];
+	function farbschrift(){for(var b=0;b<Buchstabe.length;b++){document.all["a"+b].style.color=farben[b]}farbverlauf()}function string2array(b){Buchstabe=new Array();while(farben.length<b.length){farben=farben.concat(farben)}k=0;while(k<=b.length){Buchstabe[k]=b.charAt(k);k++}}function divserzeugen(){for(var b=0;b<Buchstabe.length;b++){document.write("<span id='a"+b+"' class='a"+b+"'>"+Buchstabe[b]+"</span>")}farbschrift()}var a=1;function farbverlauf(){for(var b=0;b<farben.length;b++){farben[b-1]=farben[b]}farben[farben.length-1]=farben[-1];setTimeout("farbschrift()",30)}var farbsatz=1;function farbtauscher(){farben=farbbibliothek[farbsatz];while(farben.length<text.length){farben=farben.concat(farben)}farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001))}setInterval("farbtauscher()",5000);
 
-</body>
-    </html>
+	text=
+	
+	string2array(text);
+	divserzeugen();
+	//document.write(text);
+	</script></div>
+	<p id='name'>
+	<script></script>
+
+
+
+<body>
+		<div class="wrapper">
+				<div class="display"
+				</div>
+				<span></span>
+				<span></span>
+		</div>
+		<script src="./index.js"></script>
